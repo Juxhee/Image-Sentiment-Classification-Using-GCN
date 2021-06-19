@@ -11,7 +11,6 @@ from util import *
 
 
 
-
 class GraphConvolution(nn.Module):
     """
         Simple GCN layer, similar to https://arxiv.org/abs/1609.02907
@@ -46,7 +45,6 @@ class GraphConvolution(nn.Module):
         return self.__class__.__name__ + ' (' \
                + str(self.in_features) + ' -> ' \
                + str(self.out_features) + ')'
-
 
 
 
