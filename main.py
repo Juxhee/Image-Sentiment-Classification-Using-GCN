@@ -83,7 +83,6 @@ def train(trn_loader, model, device,  optimizer):
 
         trn_loss = focal_loss(target, output, alpha=0.25, gamma=2)  # cost fcn is Binary_Cross_entropy
         trn_loss.backward()  # backpropagation
-        # 이거 뭐임
         torch.nn.utils.clip_grad_norm(model.parameters(), 10.0)
         optimizer.step()  # training model
 
@@ -233,9 +232,3 @@ def main(total_epoch: int, graphic_device: str = 'gpu', _model: str = 'GCNResnex
     print(f'Total Process time:{(end - start) / 60:.3f}Minute')
     print(f'Best Epoch:{best_epoch} | MAE:{best_loss:.5f}')
 
-if __name__ == '__main__':
-    gcn_model = 'GCNResnext50'
-    optimizer = 'Adam'
-    device = 'cpu'
-    epoch = 60
-    main(epoch, device, gcn_model, optimizer)
