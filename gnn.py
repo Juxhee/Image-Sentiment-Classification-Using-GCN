@@ -10,7 +10,7 @@ from node_edge import *
 from util import *
 
 
-
+# https://github.com/spmallick/learnopencv/blob/master/Graph-Convolutional-Networks-Model-Relations-In-Data/graph_convolutional_networks_model_relations_in_data.ipynb
 class GraphConvolution(nn.Module):
     """
         Simple GCN layer, similar to https://arxiv.org/abs/1609.02907
