@@ -1,4 +1,4 @@
-## GCN을 활용한 광고 포스터 이미지 분류 실험
+## GCN을 활용한 multi-label image sentiment classification
 
 ##
 
